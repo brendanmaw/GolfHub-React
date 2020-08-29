@@ -2,8 +2,10 @@
     width: 100%;
     margin-top: 15px;
     border-radius: 15px;
-    background-color: #9195a1;
+    background-color: #363a51;
     box-shadow: 0px 5px 7px -7px rgba(0, 0, 0, 0.75);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: 	#fff;
 }
 
 .post__top {
@@ -27,7 +29,7 @@
 
 .post__topInfo > p {
     font-size: small;
-    color: #4c5267;
+    color: rgb(175, 160, 160);
 }
 
 .post__image > img {
@@ -64,7 +66,7 @@
 }
 
 .post__option:hover {
-    background-color: #4c5267;
+    background-color: 	#1a2b42;
     border-radius: 10px;
 }    
 

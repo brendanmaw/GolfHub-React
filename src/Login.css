@@ -1,8 +1,8 @@
-.login {
+.login{
     display: grid;
     place-items: center;
     height: 100vh;
-    background-color: #1a2b42;
+    background-color: 	#363a51;
 }
 
 .login > button {
