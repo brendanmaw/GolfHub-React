@@ -26,12 +26,12 @@ function MessageSender() {
             message: input,
             timestamp: firebase.firestore.FieldValue.serverTimestamp(),
             profilePic: user.photoURL,
-            username: user.displayName,
-            image: imageUrl,
+            username: user.displayName,            
             course: courseName,
             location: location,
             par: par,
-            score: score
+            score: score,
+            image: imageUrl
         });
         setInput("");
         setCourse("");
@@ -47,9 +47,8 @@ function MessageSender() {
                 <Avatar src={user.photoURL} />
                 <form>
                     <input value={courseName} onChange={(e) => setCourse(e.target.value)} className="messageSender__input" placeholder={`What course did you play today, ${user.displayName}?`}/>
-                    <input value={location} onChange={(e) => setLocation(e.target.value)} placeHolder="Enter City + Province/State"/>
-                    <input value={input} onChange={(e) => setInput(e.target.value)} placeHolder="How was the round?"/>
-
+                    <input value={location} onChange={(e) => setLocation(e.target.value)} placeholder="Enter City + Province/State"/>
+                    
                     <button onClick={handleSubmit} type="submit">
                         Hidden submit
                     </button>
@@ -60,17 +59,17 @@ function MessageSender() {
             <div className="messageSender__bottom">
                 <div className="messageSender__option">
                     <ExposureIcon style={{ color : "#67f494" }} />
-                    <input value={par} onChange={(e) => setPar(e.target.value)}  placeHolder="Enter Course Par"/>
+                    <input type="number" min="0" max="200000000000" value={par} onChange={(e) => setPar(e.target.value)}  placeholder="Enter Course Par"/>
                 </div>
 
                 <div className="messageSender__option">
                     <CreateIcon style={{ color : "#67f494" }} />
-                    <input value={score} onChange={(e) => setScore(e.target.value)} placeHolder="Enter Your Score"/>
+                    <input type="number" min="18" max="20000000000" value={score} onChange={(e) => setScore(e.target.value)} placeholder="Enter Your Score"/>
                 </div>
 
                 <div className="messageSender__option">
-                    <PhotoLibraryIcon style={{ color : "#67f494" }} />
-                    <h3>(Optional) Share a Photo/Video</h3>
+                    <PhotoLibraryIcon style={{ color : "#67f494" }} />                                          
+                    <input type="url" value={imageUrl} onChange={(e) => setImageUrl(e.target.value)} placeholder="Image URL (Optional)"/>                    
                 </div>
             </div>           
         </div>
