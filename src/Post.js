@@ -20,11 +20,11 @@ function Post({ profilePic, image, username, timestamp, message, course, locatio
             </div> 
 
             <div className ="post__bottom">
-                <p>{username}'s Game Today:</p>
-                <p>Location: {location} </p>
-                <p>Course Name: {course} </p>                
-                <p>Course Par: {par}</p>
-                <p>Your Score: {score} </p>
+                <h4>{username}'s Game Today:</h4>
+                <br></br>
+                <p><span class="green">Location:</span> {location}  <span class="green">Course Name:</span> {course}</p>                              
+                <p><span class="green">Course Par:</span> {par}  <span class="green">Your Score:</span> {score} </p>
+                
                 
             </div>
 
