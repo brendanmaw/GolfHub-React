@@ -9,7 +9,8 @@ import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 
 
 function Post({ profilePic, image, username, timestamp, message, course, location, par, score }) {
-    return (
+    
+    return (    
         <div className='post'>
             <div className="post__top">
                 <Avatar src={profilePic} className="post_avatar"  />
@@ -23,9 +24,7 @@ function Post({ profilePic, image, username, timestamp, message, course, locatio
                 <h4>{username}'s Game Today:</h4>
                 <br></br>
                 <p><span class="green">Location:</span> {location}  <span class="green">Course Name:</span> {course}</p>                              
-                <p><span class="green">Course Par:</span> {par}  <span class="green">Your Score:</span> {score} </p>
-                
-                
+                <p><span class="green">Course Par:</span> {par}  <span class="green">Your Score:</span> {score} </p>                                              
             </div>
 
             <div className='post__image'>

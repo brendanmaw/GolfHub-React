@@ -21,9 +21,8 @@ function Login() {
     };
     return (
         <div className="login">
-            <div className='login__logo'>
-                <img src="https://realestatebossmamas.com/wp-content/uploads/2018/02/logo-placeholder-1.png" alt=""/>
-                <img src="https://static.wixstatic.com/media/2e1770_a523cbce2cf343f5a7430c56cfd33da0~mv2_d_3600_1800_s_2.png/v1/fill/w_3600,h_1800,al_c/2e1770_a523cbce2cf343f5a7430c56cfd33da0~mv2_d_3600_1800_s_2.png" alt=''/>
+            <div className='login__logo'>                
+                <img src="https://i.ibb.co/LNkMt9m/Golf-Hub-02.png" alt=''/>
 
             </div>
             <Button type='Submit' onClick={signIn}

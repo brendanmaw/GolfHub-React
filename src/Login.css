@@ -19,8 +19,7 @@
 
 
 .login > div > img {
-    object-fit: contain;
-    height: 150px;
+    object-fit: contain;    
 }
 
 .login > div {
