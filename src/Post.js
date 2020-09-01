@@ -10,7 +10,9 @@ import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 
 
 
-function Post({ profilePic, image, username, timestamp, course, location, par, score,}) {  
+
+function Post({ profilePic, image, username, timestamp, course, location, par, score,}) {
+    const [likes, setLikes] = useState(0);  
     return (    
         <div className='post'>
             <div className="post__top">
@@ -24,8 +26,9 @@ function Post({ profilePic, image, username, timestamp, course, location, par, s
             <div className ="post__bottom">
                 <h4>{username}'s Game Today:</h4>
                 <br></br>
-                <p><span class="green">Location:</span> {location}  <span class="green">Course Name:</span> {course}</p>                              
-                <p><span class="green">Course Par:</span> {par}  <span class="green">Your Score:</span> {score} </p>                                              
+                <p><span className="green">Location:</span> {location}  <span className="green">Course Name:</span> {course}</p>                              
+                <p><span className="green">Course Par:</span> {par}  <span className="green">Your Score:</span> {score} </p>
+                                                          
             </div>
 
             <div className='post__image'>
@@ -35,7 +38,7 @@ function Post({ profilePic, image, username, timestamp, course, location, par, s
             <div className="post__options">
                 <div className="post__option">
                     <ThumbUpIcon />
-                    <button>Like:</button>
+    <button onClick={() => setLikes(likes+1)}>Like: {likes}</button>
                 </div>
                 <div className="post__option">
                     <ChatBubbleOutlineIcon />

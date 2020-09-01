@@ -9,7 +9,7 @@ import db from "./firebase";
 import firebase from "firebase";
 
 function MessageSender() {
-    const [{ user }, dispatch] = useStateValue();
+    const [{ user }] = useStateValue();
     const [courseName, setCourse] = useState('');
     const [location, setLocation] = useState('');
     const [par, setPar] = useState('');    
