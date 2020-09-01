@@ -13,10 +13,18 @@
 
 .sidebarRow > h4 {
     margin-left: 20px;
-    font-weight: 600;
+    font-weight: 600;    
 }
 
 .sidebarRow > .MuiSvgIcon-root {
     font-size: xx-large;
     color: #67f494;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+a:visited {
+    text-decoration: none !important;
 }

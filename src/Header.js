@@ -13,7 +13,7 @@ import { useStateValue } from './StateProvider';
 //import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 
-function Header() {
+function Header() {    
     const [{ user }, dispatch] = useStateValue();
     return (
         <div className='header'>
